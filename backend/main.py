@@ -10,7 +10,7 @@ from core.llm import MODELS, get_provider
 from core.db  import init_db, save_scan, get_history, get_scan
 
 init_db()
-app = FastAPI(title="RedAgent", version="2.0.0")
+app = FastAPI(title="RedAgent", version="1.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 class ScanRequest(BaseModel):
@@ -20,7 +20,7 @@ class ScanRequest(BaseModel):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "version": "2.0.0"}
+    return {"status": "ok", "version": "1.0.0"}
 
 @app.get("/api/models")
 def get_models():
