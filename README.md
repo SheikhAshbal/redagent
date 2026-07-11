@@ -1,6 +1,6 @@
-# RedAgent — AI Red Teaming Platform
+# RedAgent - AI Red Teaming Platform
 
-Automated red-teaming platform for agentic LLM systems. Tests AI agents for OWASP LLM Top 10 vulnerabilities using real cloud APIs — no local model required.
+Automated red-teaming platform for agentic LLM systems. Tests AI agents for OWASP LLM Top 10 vulnerabilities using real cloud APIs - no local model required.
 
 ## Real Test Results
 
@@ -22,7 +22,7 @@ Full comparison across models and targets:
 | Mock Agent | Llama 3.1 8B | 2/4 breached |
 | AgentShield | Llama 3.1 8B | 0/4 breached |
 
-Key finding: larger models correctly rejected mismatched injected refund amounts by cross-referencing order data, while smaller models followed injected instructions blindly — but both model sizes were equally vulnerable to Crescendo-style multi-turn social engineering. Capability does not uniformly improve security; it depends on the attack class.
+Key finding: larger models correctly rejected mismatched injected refund amounts by cross-referencing order data, while smaller models followed injected instructions blindly - but both model sizes were equally vulnerable to Crescendo-style multi-turn social engineering. Capability does not uniformly improve security; it depends on the attack class.
 
 ## Architecture
 
@@ -120,10 +120,10 @@ Open ```http://localhost:5173```, pick a target (Mock Agent or AgentShield), pic
 
 RedAgent can attack two different targets:
 
-- Mock Agent — an unprotected OrderBot with no security controls, used as the attack baseline
-- AgentShield — a real 3-layer firewall (github.com/SheikhAshbal/agentshield), tested live via its API
+- Mock Agent - an unprotected OrderBot with no security controls, used as the attack baseline
+- AgentShield - a real 3-layer firewall (github.com/SheikhAshbal/agentshield), tested live via its API
 
-Running the same attacks against both targets produces the actual security comparison — this is the core research workflow RedAgent is built for.
+Running the same attacks against both targets produces the actual security comparison - this is the core research workflow RedAgent is built for.
 
 ## Supported Models
 
@@ -146,9 +146,3 @@ Running the same attacks against both targets produces the actual security compa
 AgentShield — the 3-layer defense firewall used as a real attack target
 https://github.com/SheikhAshbal/agentshield
 
-## Built by
-
-Ashbal Sheikh — AI Security Engineer
-GitHub: https://github.com/SheikhAshbal
-Certified: C3SA, BlackByt3 AI Security and Red Teaming Bootcamp
-Final Year BS Cybersecurity — MUET Jamshoro
